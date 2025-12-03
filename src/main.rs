@@ -1,5 +1,6 @@
 mod task1;
 mod task2;
+mod task3;
 
 
 fn main() {
@@ -8,4 +9,7 @@ fn main() {
 
     task2::execute_part1_from_input("inputs/task2.txt");
     task2::execute_part2_from_input("inputs/task2.txt");
+
+    task3::execute_part1_from_input("inputs/task3.txt");
+    task3::execute_part2_from_input("inputs/task3.txt");
 }

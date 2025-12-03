@@ -1,6 +1,7 @@
 use std::fs::File;
 use std::io::{BufReader, BufRead};
 
+
 fn part1(rotations: Vec<i32>) -> i32 {
     let mut dial: i32 = 50;
     let mut password = 0;
