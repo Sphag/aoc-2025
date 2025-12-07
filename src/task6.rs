@@ -1,5 +1,6 @@
 use std::fs::read_to_string;
 
+
 fn part1(problems: Vec<(char, Vec<Vec<char>>)>) -> u64 {
     let mut grand_total: u64 = 0;
     for problem in problems {
@@ -113,10 +114,10 @@ mod tests {
     #[test]
     fn test_part1_cases() {
         let problems: Vec<(char, Vec<Vec<char>>)> = vec![
-            ('*', vec!["123 ".chars().collect(), " 45 ".chars().collect(), "  6 ".chars().collect()]),
-            ('+', vec!["328 ".chars().collect(), "64  ".chars().collect(), "98  ".chars().collect()]),
-            ('*', vec![" 51 ".chars().collect(), "387 ".chars().collect(), "215 ".chars().collect()]),
-            ('+', vec!["64  ".chars().collect(), "23  ".chars().collect(), "314 ".chars().collect()]),
+            ('*', vec!["123".chars().collect(), " 45".chars().collect(), "  6".chars().collect()]),
+            ('+', vec!["328".chars().collect(), "64 ".chars().collect(), "98 ".chars().collect()]),
+            ('*', vec![" 51".chars().collect(), "387".chars().collect(), "215".chars().collect()]),
+            ('+', vec!["64 ".chars().collect(), "23 ".chars().collect(), "314".chars().collect()]),
         ];
 
         assert_eq!(part1(problems), 4277556);
@@ -125,10 +126,10 @@ mod tests {
     #[test]
     fn test_part2_cases() {
         let problems: Vec<(char, Vec<Vec<char>>)> = vec![
-            ('*', vec!["123 ".chars().collect(), " 45 ".chars().collect(), "  6 ".chars().collect()]),
-            ('+', vec!["328 ".chars().collect(), "64  ".chars().collect(), "98  ".chars().collect()]),
-            ('*', vec![" 51 ".chars().collect(), "387 ".chars().collect(), "215 ".chars().collect()]),
-            ('+', vec!["64  ".chars().collect(), "23  ".chars().collect(), "314 ".chars().collect()]),
+            ('*', vec!["123".chars().collect(), " 45".chars().collect(), "  6".chars().collect()]),
+            ('+', vec!["328".chars().collect(), "64 ".chars().collect(), "98 ".chars().collect()]),
+            ('*', vec![" 51".chars().collect(), "387".chars().collect(), "215".chars().collect()]),
+            ('+', vec!["64 ".chars().collect(), "23 ".chars().collect(), "314".chars().collect()]),
         ];
 
         assert_eq!(part2(problems), 3263827);
