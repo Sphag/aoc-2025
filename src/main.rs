@@ -5,6 +5,7 @@ mod task4;
 mod task5;
 mod task6;
 mod task7;
+mod task8;
 
 
 fn main() {
@@ -28,4 +29,7 @@ fn main() {
 
     task7::execute_part1_from_input("inputs/task7.txt");
     task7::execute_part2_from_input("inputs/task7.txt");
+
+    task8::execute_part1_from_input("inputs/task8.txt");
+    task8::execute_part2_from_input("inputs/task8.txt");
 }
